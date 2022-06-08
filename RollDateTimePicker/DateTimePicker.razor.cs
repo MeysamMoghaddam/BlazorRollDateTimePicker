@@ -20,6 +20,9 @@ namespace RollDateTimePicker
 
         [Parameter] public DateTimePickerOption Options { get; set; }
         private DotNetObjectReference<DateTimePicker>? dotNetHelper;
+
+        [Parameter(CaptureUnmatchedValues = true)]
+        public IDictionary<string, object>? AdditionalAttributes { get; set; }
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
             if (firstRender)

@@ -4,7 +4,25 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>rolldate is a mobile-first, iOS-style, multi-format date picker component that uses better-scroll library for smooth scroll experience on the mobile &amp; desktop.</Description>
+    <Copyright>© Moghaddam. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/MeysamMoghaddam/BlazorRollDateTimePicker</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/MeysamMoghaddam/BlazorRollDateTimePicker</RepositoryUrl>
+    <PackageTags>rolldate BlazorRolldate DatePicker dotnet6 TimePicker</PackageTags>
+    <PackageReleaseNotes>initial </PackageReleaseNotes>
+    <PackageIcon>logo.png</PackageIcon>
+    <Authors>Moghaddam</Authors>
+    <Version>1.1.0</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 
   <ItemGroup>
@@ -13,6 +31,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
