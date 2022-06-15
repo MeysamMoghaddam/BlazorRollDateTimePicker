@@ -24,7 +24,7 @@ namespace RollDateTimePicker
         /// YYYY-MM-DD hh:mm
         /// YYYY-MM-DD
         /// </summary>
-        public string DateFormat { get; set; }
+        public string DateFormat { get; set; } = "YYYY-MM-DD";
 
         public int BeginYear { get; set; } = 2000;
         public int EndYear { get; set; } = 2100;

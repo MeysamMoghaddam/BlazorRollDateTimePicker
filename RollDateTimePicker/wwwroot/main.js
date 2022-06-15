@@ -2,7 +2,7 @@
 export function loadRollPicker(identifier, option, value, dotNetHelper) {
     new Rolldate({
         el: '#' + identifier,
-        format: option.format,
+        format: option.dateFormat,
         beginYear: option.beginYear,
         endYear: option.endYear,
         lang: option.language,
