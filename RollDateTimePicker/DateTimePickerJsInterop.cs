@@ -23,6 +23,12 @@ namespace RollDateTimePicker
 
             main = new(() => jSRuntime.InvokeAsync<IJSObjectReference>(
                "import", "./_content/RollDateTimePicker/main.js").AsTask());
+            Init();
+        }
+        public async Task Init()
+        {
+            await rolldate.Value;
+            await main.Value;
         }
         public async Task Load(string Identifier, DateTimePickerOption Option, string Value, DotNetObjectReference<DateTimePicker>? dotNetHelper)
         {

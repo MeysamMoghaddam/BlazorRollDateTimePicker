@@ -46,9 +46,8 @@ namespace RollDateTimePicker
         {
             await ValueChanged.InvokeAsync(Date);
             var pcul = new CultureInfo(CultureInfoName);
-            if(DateTime.TryParseExact(Date, Options.DateFormat, pcul,DateTimeStyles.None,out var mValue))            
-                await MValueChanged.InvokeAsync(mValue);            
-            
+            if (DateTime.TryParse(Date, pcul, DateTimeStyles.None, out var mValue))
+                await MValueChanged.InvokeAsync(mValue);
         }
     }
 }

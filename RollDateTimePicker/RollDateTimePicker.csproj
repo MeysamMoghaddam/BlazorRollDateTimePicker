@@ -11,10 +11,10 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/MeysamMoghaddam/BlazorRollDateTimePicker</RepositoryUrl>
     <PackageTags>rolldate BlazorRolldate DatePicker dotnet6 TimePicker</PackageTags>
-    <PackageReleaseNotes>Export DateTime</PackageReleaseNotes>
+    <PackageReleaseNotes>fix bugs</PackageReleaseNotes>
     <PackageIcon>logo.png</PackageIcon>
     <Authors>Moghaddam</Authors>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
